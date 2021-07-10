@@ -3,10 +3,14 @@
 
 #include "mcl/stdc.h"
 
-MCL_STDC_BEGIN
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 void clean(int x, int y);
 
-MCL_STDC_END
+#ifdef __cplusplus
+}
+#endif
 
 #endif
